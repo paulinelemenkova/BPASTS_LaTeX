@@ -13,6 +13,8 @@
 
 \usepackage{graphicx}
 \usepackage{flushend}
+\usepackage{float}
+\usepackage{tabularx}
 
 \usepackage[colorlinks=true, allcolors=bpastsblue, pdfborder={0 0 0}]{hyperref}
 
@@ -26,15 +28,15 @@
 
 \Address{$^1$ Swedish Transport Administration, Gibraltargatan 7, Malmö, Sweden \\ $^2$ Lund University, Division of Building Materials, Box 118, SE- 221-00, Lund, Sweden \\ $^3$ Université Libre de Bruxelles. École polytechnique de Bruxelles (Brussels Faculty of Engineering), Laboratory of Image Synthesis and Analysis. Campus de Solbosch, Av. Franklin Roosevelt 50, Brussels 1000, Belgium}
 
-\Abstract{Experiments have been carried out on a laboratory scale to show that it is possible to achieve the desired properties with regard to strength and environmental impact through stabilization and solidification of contaminated sediments.}
+\Abstract{On behalf of SCA, SGI has performed geotechnical and environmental geotechnical laboratory tests on dredged material from SCA Östrand pulp mill. The purpose was to investigate the possibilities of using stabilization / solidification of dredged masses and to recommend a combination of binder components with recipe selection. The experimental design is based on a systematic approach of measuring compressive strength of the samples and P-wave velocity in order to evaluate the properties of soils for construction of new biorefinery. Experiments have been carried out on a laboratory scale to show that it is possible to achieve the desired properties with regard to strength and environmental impact through stabilization and solidification of contaminated sediments. Laboratory tests containing geotechnical and environmental tests were performed in two different phases and included p-wave velocity, compressive strength. Quality requirements to be achieved in the field consisted of the following conditions: compressive strength of at least 140 kPa (cu $\geq$ 70 kPa) after 90 days; replacements in the stabilized material \textless 5 cm two years after stabilization / solidification. The experiments were performed on a sediment sample from Sk\"{o}nviken. In light of SGI's experience from other projects, a combination of cement and granulated blast furnace slag was chosen for the tests as a binder. The quality objective regarding permeability constitutes both a geotechnical and environmental technical quality requirement. The experiments showed that an increased water ratio gives a lower strength while maintaining the amount of binder.}
 
-\Keywords{component; formatting; style; styling; insert }
+\Keywords{Unconfined compressive strength; Elastic wave; P-wave velocity; Stabilised sediments; Solidified soil; Cement; Slag; Applied Geophysics, Civil Engineering; Construction; Stiffness}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% EDITOR SECTION (Do not change)
-\vol{XX} \no{Y} \year{2021}
+\vol{XX} \no{Y} \year{2022}
 \setcounter{page}{1}
-\doi{10.24425/bpasts.2021.DOI}
+\doi{10.24425/bpasts.2022.DOI}
 \begin{document}
 \maketitle
 
@@ -43,187 +45,158 @@
 
 \section{Introduction}
 
-This file is to provide simple example of the scientific paper written in \LaTeX~for the BPASTS journal. 
-All good \LaTeX~practices should be followed. Using the attached style files (bpasts.sty and IEEEtran.bst) guarantees the correct formatting of the article.  
+SCA Biorefinery Östrand AB plans to build a new biorefinery for the production of fuel in the form of petrol and diesel from biological raw materials in connection with the existing pulp mill located in Östrand's industrial area in Timrå municipality. The area for the planned biorefinery needs to be stabilized and in addition, additional space needs to be created in a water area to make room for the refinery.  
 
-\section{Ease of use}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.99\linewidth]{img/Fig_01} 
+\end{center}
+\caption{Figure showing reinforcement barrier for water and land area. Figure source: SCA.}
+\label{fig:01}
+\end{figure}
 
-\subsection{Selecting a template}
-First, confirm that you have the correct template for your paper size. This template has been tailored for output on the A4 paper size.
+As part of the reinforcement work in the water area, stabilization and solidification are planned to take place of contaminated masses in the seabed and of contaminated masses that must be dredged and that cannot be dumped into the sea. The binder aims to increase the compressive strength of the masses, reduce sediments, bind the impurities and thereby prevent leaching from them. By stabilizing added dredged masses on site, contaminated masses under the seabed can also be stabilized at the same time.
 
-\subsection{Maintaining the integrity of the specifications}
-The template is used to format your paper and style the text. All margins, column widths, line spaces, and text fonts are prescribed; please do not alter them. Please do not revise any of the current designations.
+\section{Methods}
 
-\section{Prepare your paper before styling}
+\section{Results}
 
-Before you begin to format your paper, first write and save the content as a separate text file. Do not use hard tabs, and limit use of hard returns to only one return at the end of a paragraph. Do not add any kind of pagination anywhere in the paper. Do not number text heads-the template will do that for you. Do not change the font sizes or line spacing to squeeze more text into a limited number of pages. Use italics for emphasis; do not underline.
+\subsection{P-wave speed and compressive strength phase 1}
 
-Finally, complete content and organizational editing before formatting. Please take note of the following items when proofreading spelling and grammar:
+The p-wave velocity has been measured on three occasions for all samples and in connection with the uniaxial pressure tests for the relevant samples. The results from the P-wave measurements are reported in Figure 14 and Figure 15. The measurements show small mutual differences within each recipe but a significant difference between the different recipes. For samples in the LWHB series, the compressive strength varied between 246 and 2262 kPa. In the HWLB series, the compressive strength varied between 96 and 1090 kPa, see Figure 16. The results show high repeatability between experiments even when determining compressive strength. The results from the uniaxial pressure tests are reported in Table \ref{tab:1}. 
 
-\subsection{Abbreviations and acronyms}
-Define abbreviations and acronyms the first time they are used in the text, even after they have been defined in the abstract. Abbreviations such as IEEE, SI, MKS, CGS, sc, dc, and rms do not have to be defined. Do not use abbreviations in the title or heads unless they are unavoidable.
-
-\subsection{Units}
-Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive.''
-Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
-Do not mix complete spellings and abbreviations of units: ``Wb/m$^2$'' or “webers per square meter,” not “webers/m$^2$.” Spell units when they appear in text: “...a few henries,” not “...a few H.”
-Use a zero before decimal points: “0.25,” not “.25.” Use “cm$^3$,” not “cc.”
-
-\subsection{Equations}
-The equations are an exception to the prescribed specifications of this template. You will need to determine whether or not your equation should be typed using either the Times New Roman, Cambria Math or the Symbol font (please no other font). 
-Number equations consecutively. Equation numbers, within parentheses, are to position flush right, as in~\eqref{eq:1}, using a right tab stop. To make your equations more compact, you may use the solidus ( / ), the exp function, or appropriate exponents. Italicize Roman symbols for quantities and variables, but not Greek symbols. Use a long dash rather than a hyphen for a minus sign. Punctuate equations with commas or periods when they are part of a sentence, as in
-
-\begin{equation} \label{eq:1}
-(x + a)^n = \sum_{k=0}^{n} \binom{n}{k} x^k a^{n-k}.
-\end{equation}
-
- Be sure that the symbols in your equation have been defined before or immediately following the equation. Emphasize symbols (T might refer to temperature, but T is the unit tesla). In text refer to ``Eq.~\eqref{eq:1}'', not ``\eqref{eq:1},'' or ``equation~\eqref{eq:1},'' except at the beginning of a sentence: ``Equation~\eqref{eq:1} is ...''.
-
-
-\subsection{Some common mistakes}
-\begin{itemize}
-\item The subscript for the permeability of vacuum $\epsilon_0$, and other common scientific constants, is zero with subscript formatting, not a lowercase letter “o.”
-\item In American English, commas, semi-/colons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
-\item Be aware of the different meanings of the homophones “affect” and “effect,” “complement” and “compliment,” “discreet” and “discrete,” “principal” and “principle.”
-\item The prefix “non” is not a word; it should be joined to the word it modifies, usually without a hyphen.
-\item There is no period after the “et” in the Latin abbreviation “et al.”
-\item The abbreviation ``i.e.'' means ``that is,'' and the abbreviation ``e.g.'' means ``for example.'' 
-\end{itemize}
-
-
-\section{Using the template}
-After the text edit has been completed, the paper is ready for the template. Duplicate the template file by using the Save As command, and use the naming convention prescribed by the journal for the name of your paper. In this newly created file, highlight all of the contents and import your prepared text file.
-
-\subsection{Authors and affiliations}
-The template is designed so that author affiliations are not repeated each time for multiple authors of the same affiliation. Please keep your affiliations as succinct as possible (for example, do not differentiate among departments of the same organization). This template was designed for two affiliations.
-
-\subsection{Identify the headings}
-Headings, or heads, are organizational devices that guide the reader through your paper. There are two types: component heads and text heads.
-Component heads identify the different components of your paper and are not topically subordinate to each other. Examples include Acknowledgements and References. Run-in heads, such as “Abstract,” will require you to apply a style (in this case, bold) in addition to the style provided by the drop down menu to differentiate the head from the text.
-Text heads organize the topics on a relational, hierarchical basis. If there are two or more sub-topics, the next level head (arabic numerals) should be used and, conversely, if there are not at least two sub-topics, then no subheads should be introduced.
-
-\subsection{Figures and tables}
-Positioning Figures and Tables: Place figures and tables at the top and bottom of columns. Avoid placing them in the middle of columns. Large figures and tables may span across both columns. Figure captions should be placed below the figures; table heads should appear above the tables. All captions and table heads should be editable. Insert figures and tables after they are cited in the text. Use the abbreviation Fig.~\ref{fig:hockey}, however at the beginning of a sentence use ``Figure ~\ref{fig:hockey}''. Do not abbreviate ``Table \ref{tab:results}''.
-
- Use words rather than symbols or abbreviations when writing Figure axis labels to avoid confusing the reader. As an example, write the quantity ``Magnetization,'' or ``Magnetization, M,'' not just ``M.'' If including units in the label, present them within parentheses. Do not label axes only with units. In the example, write ``Magnetization (A/m)''. Do not label axes with a ratio of quantities and units. For example, write ``Temperature (K),'' not ``Temperature/K.''
-
+Table 1.
 \begin{table}
-\caption{Results of simulation}
-\label{tab:results}
+\caption{Results of the tests on the uniaxial compressive strength}
+\label{tab:1}
 \begin{tabular}{|l|c|c|c|c|}
 \hline
-header & abc & ijk & xyz & $\theta$ \\
+Sample & Compressive strength (kPa) & Shear strength (kPa) \\
 \hline \hline
-one & 0.1 & 0.01 & 0.001 & 0.0001\\ 
+HWLB\_c/s\_70/30\_01 & 96 & 48 \\ 
 \hline
-two & 1.1 & 2.2 & 3.3 & 4.4\\
+HWLB\_c/s\_50/50\_01 & 294 & 147 \\
 \hline
-three & 1.1 & 2.2 & 3.3 & 4.4\\
+HWLB\_c/s\_30/70\_01 & 1046 & 523 \\
+HWLB\_c/s\_70/30\_02 & 96 & 48 \\
+HWLB\_c/s\_50/50\_02 & 294 & 147 \\
+HWLB\_c/s\_30/70\_02 & 1090 & 545 \\
+LWHB\_c/s\_70/30\_01 & 246 & 123 \\
+LWHB\_c/s\_50/50\_01 & 718 & 359 \\
+LWHB\_c/s\_30/70\_01 & 2262 & 1131 \\
+LWHB\_c/s\_70/30\_02 & 264 & 132 \\
+LWHB\_c/s\_50/50\_02 & 710 & 355 \\
+LWHB\_c/s\_30/70\_02 & 2186 & 1093 \\
 \hline
 \end{tabular}
 \end{table}
 
+The results show that a minimum compressive strength of 280 kPa can be contained with both amounts of binder with the recipes c / s 50/50 and c / s 30/70. When using c / s 70/30, 280 kPa in compressive strength is not obtained. 
 
-\begin{figure}
+\subsection{P-wave speed and compressive strength phase 2}
+
+For test series part two, a total of 30 test specimens were manufactured according to Table 2. All the test specimens in phase 2 contained 30\% cement and 70\% slag. 
+
+\begin{table}
+\caption{Manufactured specimens in laboratory phase 2. For the HWLB combination, no specimens were performed for shaking tests, hence a smaller number of specimens for that combination. }
+\label{tab:2}
+\begin{tabular}{|l|c|c|}
+\hline
+Binder / water ratio  & LW (139 \%) & HW (190 \%)  \\
+\hline \hline
+LB (120 kg/m3) & 8 & 6 \\ 
+\hline
+ELB (100 kg/m3) & 8 & 8 \\
+\hline
+\end{tabular}
+\end{table}
+
+Figures 17 to 20 show the results from P-wave measurements for the specimens manufactured for phase 2. For the combination HWLB, see Figure 19, only 6 specimens were manufactured as this combination was also included in phase 1. In phase 2, the specimens show a slightly greater mutual variation. This is because before phase 1, a new mixing routine was introduced with regard to the charging energy. Due to a communication failure, this routine was not applied in phase 2, which resulted in an increased spread within each group. 
+
+After 85 days of storage, the samples were pressed uniaxially after the P-wave velocity of the respective specimen was determined. The choice of 85 days was due to the holiday closure of the laboratory and was not judged to give any significant difference in the compressive strength. The result is reported in Figure 21. 
+
+When the data base and that experiments were performed as a complete 22-factor experiment, an analysis of variance (ANOVA) could be performed. The analysis shows that there is only a linear relationship between the amount of binder and the water ratio, see Figure 22.
+
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.99\linewidth]{img/Fig_14} 
+\includegraphics[width=0.99\linewidth]{img/Fig_02} 
 \end{center}
 \caption{P-wave velocity for the combination LWHB and the three different recipes, where 1 - 6 is cement / slag 70/30, 7 - 12 is cement / slag 50/50 and 13 - 18 is cement / slag 30/70 . The P-wave velocity is measured on three occasions, 28, 42 and 71 days after mixing}
-\label{fig:14}
+\label{fig:02}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.99\linewidth]{img/Fig_15} 
+\includegraphics[width=0.99\linewidth]{img/Fig_03} 
 \end{center}
 \caption{P-wave velocity for the combination HWLB and the three different recipes, where 1 - 6 is cement / slag 70/30, 7 - 12 is cement / slag 50/50 and 13 - 18 is cement / slag 30/70 . The P-wave velocity is measured on three occasions, 28, 43 and 70 days after mixing.}
-\label{fig:15}
+\label{fig:03}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.99\linewidth]{img/Fig_16} 
+\includegraphics[width=0.99\linewidth]{img/Fig_04} 
 \end{center}
 \caption{Compressive strength after 90 days of storage at 20 oC as a function of the P-wave velocity. The reference line is based on the requirement for compressive strength of 140 kPa with a safety factor of 2, i.e. 280 kPa.}
-\label{fig:16}
+\label{fig:04}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.99\linewidth]{img/Fig_17} 
+\includegraphics[width=0.99\linewidth]{img/Fig_05} 
 \end{center}
 \caption{P-wave velocity of the LWLB combination. The P-wave velocity is measured on two occasions, 28 and 85 days after mixing. }
-\label{fig:17}
+\label{fig:05}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.99\linewidth]{img/Fig_18} 
+\includegraphics[width=0.99\linewidth]{img/Fig_06} 
 \end{center}
 \caption{P-wave velocity of the LWELB combination. The P-wave velocity is measured on two occasions, 28 and 85 days after mixing. }
-\label{fig:18}
+\label{fig:06}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.99\linewidth]{img/Fig_19} 
+\includegraphics[width=0.99\linewidth]{img/Fig_07} 
 \end{center}
 \caption{P-wave velocity of the HWLB combination. The P-wave velocity is measured on two occasions, 28 and 85 days after mixing}
-\label{fig:19}
+\label{fig:07}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.99\linewidth]{img/Fig_20} 
+\includegraphics[width=0.99\linewidth]{img/Fig_08} 
 \end{center}
 \caption{P-wave velocity of the HWELB combination. The P-wave velocity is measured on two occasions, 28 and 85 days after mixing}
-\label{fig:20}
+\label{fig:08}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.99\linewidth]{img/Fig_21} 
+\includegraphics[width=0.99\linewidth]{img/Fig_09} 
 \end{center}
 \caption{UCS after 85 days of storage as a function of P-wave velocity including results from phase 1 The reference line is based on the requirement for compressive strength of 140 kPa with a safety factor of 2, i.e. 280 kPa}
-\label{fig:21}
+\label{fig:09}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.99\linewidth]{img/Fig_22} 
+\includegraphics[width=0.99\linewidth]{img/Fig_10} 
 \end{center}
 \caption{Evaluation of the factor experiment. The experiment only shows linear effects between water ratio and amount of binder. The result is expected, i.e. an increased water ratio gives a lower strength while maintaining the amount of binder}
-\label{fig:22}
+\label{fig:10}
 \end{figure}
 
-\section{References Style}
-Since 1 January 2021 we apply the IEEE Citation Style.
-It is suggested for authors to use BibTex system and specialized platform for selection and writing references (for example Mendeley, Zotero or other reference manager). It is strongly recommended to provide DOI where possible.
-
-Any citation style is set up to give the reader immediate information about sources cited in the text. In IEEE style citations, the references should be numbered and appear in the order they appear in the text. When referring to a reference in the text of the document, put the number of the reference in square brackets. 
-
-The IEEE citation style has 3 main features:
-\begin{itemize}
-\item The author name is first name (or initial) and last name.
-\item The title of an article (or chapter, conference paper, patent etc.) is in quotation marks.
-\item The title of the journal or book is in italics.
-\end{itemize}
-
-These conventions allow the reader to distinguish between types of reference at a glance. The correct placement of periods, commas and other punctuation marks depends on the type of reference cited. Check the examples below. By using official ieeetr.bst file you can be sure that all the details are correct.
-
-Check the distinctions between print and electronic sources (especially for journals) carefully.
+\section{Discussion}
 
 \section{Conclusions}
-
-Provided \LaTeX~ document style (bpasts.sty) and bibtex style (IEEEtran.bst) are responsible for proper formatting of your paper. The authors are encouraged to take advantage of these possibilities and avoid manual modification of formatting.
-
-\section*{Appendix}
-Appendixes, if needed, appear before the acknowledgment.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% ACKNOWLEDGEMENTS
 \begin{acknowledgements}
-Avoid the stilted expression “one of us (R. B. G.) thanks ...”.  Instead, try “R. B. G. thanks...”. Put sponsor acknowledgements unnumbered at the end of the text and before References.
+
 \end{acknowledgements}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -231,6 +204,7 @@ Avoid the stilted expression “one of us (R. B. G.) thanks ...”.  Instead, tr
 %% Since January 1st 2021, IEEE Citation Style should be applied.
 %\bibliographystyle{IEEEtran}
 \bibliographystyle{IEEEtranUrldate}
+%\newpage
 
 %% Change to your *.bst file
 \bibliography{References}
