@@ -6,6 +6,10 @@
 %% For accepted papers enable option "accepted" to deanonymize
 %% your manuscript 
 \usepackage[accepted]{bpasts}
+%\usepackage[numbers,sort&compress,comma]{natbib}
+\usepackage{url}
+	\def\UrlBreaks{\do\/\do-}
+\usepackage{breakurl}
 
 \usepackage{t1enc}
 \usepackage[utf8]{inputenc}
@@ -20,7 +24,9 @@
 \usepackage{fixltx2e}
 \usepackage[super]{nth}
 
-\usepackage[colorlinks=true, allcolors=bpastsblue, pdfborder={0 0 0}]{hyperref}
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+\usepackage[pdftex,colorlinks=true,allcolors=bpastsblue,breaklinks,pdfborder={0 0 0},bookmarks=true]{hyperref}
+\hypersetup{bookmarksdepth=paragraph,colorlinks=true,linkcolor=bpastsblue,urlcolor=bpastsblue,citecolor=bpastsblue}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% HEADER OF THE ARTICLE (Change all fields)
@@ -267,8 +273,9 @@ The project has been supported by the Swedish Geotechnical Institute (SGI) and t
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% REFERENCES
 %% Since January 1st 2021, IEEE Citation Style should be applied.
-%\bibliographystyle{IEEEtran}
-\bibliographystyle{IEEEtranUrldate}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{plainnat}
+%\bibliographystyle{IEEEtranDOI}
 %\newpage
 
 %% Change to your *.bst file
